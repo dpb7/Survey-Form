@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ACME Survey</h1>
+    <div>
+        <p>Thank you for visiting. Please let us know about your experience with us.</p>
+        <form action="">
+            <div>
+                <label for="first_name">* First Name:</label>
+                <input id="first_name" type="text" placeholder="John" required>
+            
+                <label for="last_name">* Last Name:</label>
+                <input id="last_name" type="text" placeholder="Smith" required>
+            </div>
+                <label for="email">* Email:</label>
+                <input id="email" type="email" placeholder="john.smith@example.com" required>
+            <div>
+                <label for="age">Age:</label>
+                <input id="age" type="text">  
+            </div>
+            <div>
+                <label for="experience">From a Scale of 1 to 5, how many stars would you rate your experience? </label>
+                <select id="experience">
+                    <option disabled selected value>Select an Option</option>
+                    <option value="1">*</option>
+                    <option value="2">**</option>
+                    <option value="3">***</option>
+                    <option value="4">****</option>
+                    <option value="5">*****</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Would you recommend our services to others?</p>
+                <label for="likely">Likely</label>
+                <input id="likely" type="radio" name="recommend" value="likely">
+
+                <label for="unlikely">Unlikely</label>
+                <input id="unlikely" type="radio" name="recommend" value="unlikely">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
