@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disney Park Survey</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Disney Park Survey Form</h1>
+    </header>
+    <div id="form-outer">
+        <form id="survey-form" action="">
+            <p id="description">Let us know which Disney Park is your favorite!</p>
+            <div class="survey-row">
+                <div class="row-heading">
+                    <label id="name-label" for="name">* Name:</label>
+                </div>
+                <div class="row-input">
+                    <input id="name" type="text" name="name" class="input-field" placeholder="Enter your full-name" required>
+                </div>
+            </div>
+
+            <div class="survey-row">
+                    <div class="row-heading">
+                        <label id="email-label" for="email">* Email:</label>
+                    </div>
+                    <div class="row-input">
+                        <input id="email" type="email" name="email" class="input-field" placeholder="Enter your email address" pattern=".+@example.com" required>
+                    </div>
+            </div>
+
+            <div class="survey-row">
+                    <div class="row-heading">
+                        <label id="number-label" for="age">* Age:</label>
+                    </div>
+                    <div class="row-input">
+                        <input id="number" type="number" name="age" min="1" max="120" class="input-field" placeholder="Enter your age">
+                    </div>
+            </div>
+
+            <div class="survey-row">
+                <div class="row-heading">
+                    <label for="dropdown">Which character best describes your personality?</label>
+                </div>
+                <div class="row-input">
+                    <select id="dropdown" name="currentPos" class="drop-down">
+                        <option disabled="" value="">Select an option</option>
+                        <option value="mickey_mouse">Mickey Mouse</option>
+                        <option value="donald_duck">Donald Duck</option>
+                        <option value="goofy">Goofy</option>
+                        <option value="minnie_mouse">Minne Mouse</option>
+                        <option value="princess">Princess</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="survey-row">
+                <div class="row-heading">
+                    <label for="preferences">Please choose your favorit Disney Park<br>(Check all that apply): </label>
+                </div>
+                <div class="row-input">
+                    <ul id="preferences">
+                        <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Magic Kingdom</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Epcot</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Hollywood Studios</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Animal Kingdom</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Typhoon Lagoon</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Blizzard Beach</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="survey-row">
+                    <div class="row-heading">
+                        <label for="userRating">* How likely are you to visit Disney again in the next 2 years?</label>
+                    </div>
+                    <div class="row-input">
+                        <ul>
+                            <li class="radio"><label>Very likely<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+                            <li class="radio"><label>Likely<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+                            <li class="radio"><label>Not likely<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+                        </ul>
+                     </div>
+                </div>
+
+            <div class="survey-row">
+                <div class="row-heading">
+                    <label for="comments">Any Comments or Suggestions?</label>
+                </div>
+                <div class="row-input">
+                    <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            
+            <button id="submit" type="submit">Submit</button>
+            
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
